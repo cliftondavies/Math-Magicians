@@ -8,7 +8,7 @@ const ButtonPanel = () => {
       {renderButton(first)}
       {renderButton(second)}
       {renderButton(third)}
-      {renderButton(fourth)}
+      {(fourth) ? renderButton(fourth) : null}
     </div>
   );
 
@@ -16,7 +16,7 @@ const ButtonPanel = () => {
     <div>
       {buttonGroup('AC', '+/-', '%', '/')}
       {buttonGroup('7', '8', '9', 'X')}
-      {buttonGroup('3', '4', '5', '6')}
+      {buttonGroup('4', '5', '6', '-')}
       {buttonGroup('1', '2', '3', '+')}
       {buttonGroup('0', '.', '=', '')}
     </div>
