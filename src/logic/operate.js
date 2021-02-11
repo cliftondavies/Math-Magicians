@@ -11,8 +11,10 @@ const operate = (numberOne, numberTwo, operation) => {
     result = total.minus(next);
   } else if (operation === 'x') {
     result = total.times(next);
-  } else {
+  } else if (operation === '/') {
     result = total.div(next);
+  } else if (operation === '%') {
+    result = next.div(100);
   }
 
   return result.toString();
