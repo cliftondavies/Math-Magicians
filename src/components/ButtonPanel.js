@@ -1,7 +1,13 @@
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => {
-  const renderButton = value => <Button buttonName={value} />;
+const ButtonPanel = props => {
+  const handleClick = buttonName => {
+    const { clickHandler } = props;
+    clickHandler(buttonName);
+  };
+
+  const renderButton = value => <Button buttonName={value} clickHandler={handleClick} />;
 
   const buttonGroup = (first, second, third, fourth = '') => (
     <div>
@@ -21,6 +27,10 @@ const ButtonPanel = () => {
       {buttonGroup('0', '.', '=')}
     </div>
   );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
