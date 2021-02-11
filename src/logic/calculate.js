@@ -4,6 +4,8 @@ const calculate = (calculatorData, buttonName) => {
   let { total, next, operation } = calculatorData;
   const operations = ['+', '-', 'x', '/', '%'];
   const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
+  if (total === null) { total = '0'; }
+  if (next === null) { next = '0'; }
 
   if (buttonName === 'AC') {
     total = '0';
