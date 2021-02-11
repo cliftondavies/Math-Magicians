@@ -22,8 +22,9 @@ const calculate = (calculatorData, buttonName) => {
       total = (operation) ? operate(total, next, operation) : next;
       operation = buttonName;
     }
-  } else {
-    next = `-${next}`;
+  } else if (buttonName === '+/-') {
+    next = `${Number(next) * -1}`;
+    total = `${Number(total) * -1}`;
   }
 
   return { total, next, operation };
