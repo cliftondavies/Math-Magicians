@@ -1,9 +1,10 @@
 import Big from 'big.js';
 
-const operate = (numberOne, numberTwo, operation) => {
+const operate = (numberOne, numberTwo, operation, percent = '') => {
   const total = new Big(numberOne);
-  const next = new Big(numberTwo);
+  let next = new Big(numberTwo);
   let result;
+  if (percent) { next = next.div(100); }
 
   if (operation === '+') {
     result = total.plus(next);
@@ -13,8 +14,6 @@ const operate = (numberOne, numberTwo, operation) => {
     result = total.times(next);
   } else if (operation === '/') {
     result = total.div(next);
-  } else if (operation === '%') {
-    result = next.div(100);
   }
 
   return result.toString();

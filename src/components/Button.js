@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 const Button = props => {
   const { buttonName, clickHandler } = props;
 
-  const handleClick = buttonName => {
-    clickHandler(buttonName);
+  const handleClick = e => {
+    clickHandler(e.target.textContent);
   };
 
   return (
