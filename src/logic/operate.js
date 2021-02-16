@@ -13,7 +13,7 @@ const operate = (numberOne, numberTwo, operation, percent = '') => {
   } else if (operation === 'x') {
     result = total.times(next);
   } else if (operation === '/') {
-    result = total.div(next);
+    result = (next > 0 || next < 0) ? total.div(next) : 'undefined';
   }
 
   return result.toString();

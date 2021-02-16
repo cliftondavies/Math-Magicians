@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
@@ -23,6 +24,7 @@ class App extends React.Component {
     const { total, next } = this.state;
     return (
       <>
+        <Navbar />
         <Display result={next || total} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
