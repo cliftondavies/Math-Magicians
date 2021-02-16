@@ -1,7 +1,7 @@
-import Navbar from './Navbar';
-
 const Quote = () => (
-  <Navbar />
+  <h2>
+    Quote
+  </h2>
 );
 
 export default Quote;

@@ -1,7 +1,7 @@
-import Navbar from './Navbar';
-
 const Home = () => (
-  <Navbar />
+  <h2>
+    Home
+  </h2>
 );
 
 export default Home;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders elements on home page 1`] = `
+<h2>
+  Home
+</h2>
+`;
