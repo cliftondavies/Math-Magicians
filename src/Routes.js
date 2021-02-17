@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import App from './components/App';
 import Quote from './components/Quote';
+import Footer from './components/Footer';
 
 const Routes = () => (
   <BrowserRouter>
@@ -13,6 +14,7 @@ const Routes = () => (
       <Route path="/calculator" component={App} />
       <Route path="/quote" component={Quote} />
     </Switch>
+    <Footer />
   </BrowserRouter>
 );
 
