@@ -38,6 +38,7 @@ code {
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
   padding: 10px 20px 0 20px;
 }
 
@@ -76,4 +77,20 @@ code {
   padding: 10px 0;
   background: grey;
   text-align: center
+}
+
+.home {
+  padding: 0 20px
+}
+
+.home h2 {
+  margin-bottom: 40px;
+}
+
+.home p {
+  line-height: 1.5;
+}
+
+.home p:first-of-type {
+  margin-bottom: 25px;
 }
