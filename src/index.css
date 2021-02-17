@@ -94,3 +94,15 @@ code {
 .home p:first-of-type {
   margin-bottom: 25px;
 }
+
+.quote {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.quote p {
+  line-height: 1.5;
+}
