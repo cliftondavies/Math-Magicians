@@ -1,5 +1,10 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
 body {
   margin: 0;
+  padding: 10px 20px;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -24,4 +29,35 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.header nav {
+  align-self: center;
+}
+
+.header a {
+  padding: 0 10px;
+}
+
+.header a:nth-child(2) {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.header a:last-child {
+  padding-right: 0;
+}
+
+.header a:visited {
+  color: blue;
 }
