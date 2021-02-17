@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Display = props => {
   const { result } = props;
   return (
-    <div style={{ height: '20px', background: 'red', width: '200px' }}>
+    <div className="display">
       <span>
         {result}
       </span>

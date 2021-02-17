@@ -43,7 +43,7 @@ code {
 }
 
 .header h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 0;
 }
 
@@ -105,4 +105,65 @@ code {
 
 .quote p {
   line-height: 1.5;
+}
+
+.app {
+  display: flex;
+  padding: 0 20px;
+}
+
+.app h2 {
+  align-self: center;
+  flex: 1;
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.app > div {
+  width: 700px;
+}
+
+.display {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  padding: 15px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 30px;
+  background: grey;
+  color: #fff;
+}
+
+.button-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-panel div {
+  display: flex;
+  height: 70px;
+}
+
+.button-default {
+  width: 25%;
+  font-size: 20px;
+  font-weight: bold;
+  background: #F4943C;
+}
+
+.button-grey {
+  width: 25%;
+  font-size: 20px;
+  font-weight: bold;
+  background: lightgrey;
+}
+
+.button-wide {
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  background: lightgrey;
 }
