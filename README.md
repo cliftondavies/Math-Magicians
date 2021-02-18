@@ -1,6 +1,6 @@
-# Calculator
+# Math Magicians
 
-> A calculator for Math-magicians.
+> A calculator for Math-magicians. Able to perform all the basic operations: +, -, x, /, %, and +/-.
 
 ## :tv: Media
 
