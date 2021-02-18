@@ -4,13 +4,18 @@ const calculate = (calculatorData, buttonName) => {
   let { total, next, operation } = calculatorData;
   const operations = ['+', '-', 'x', '/', '%'];
   const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
+  if (total === 'undefined') { total = null; }
 
   if (buttonName === 'AC') {
     total = null;
     next = null;
     operation = null;
   } else if (digits.includes(buttonName)) {
-    next = (next) ? next + buttonName : buttonName;
+    if (next) {
+      next = (next.includes('.') && buttonName === '.') ? next : next + buttonName;
+    } else {
+      next = buttonName;
+    }
   } else if (buttonName === '=') {
     total = (operation && total && next) ? operate(total, next, operation) : next;
     next = null;
