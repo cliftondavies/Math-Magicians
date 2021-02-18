@@ -126,7 +126,7 @@ code {
 
 .display {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   border-radius: 5px 5px 0 0;
   padding: 15px;
