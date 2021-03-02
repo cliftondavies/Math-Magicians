@@ -14,6 +14,7 @@
 - CSS3
 - JavaScript ES6
 - React 17.0.1
+- Jest v26.6
 
 ## :rocket: Getting Started
 
