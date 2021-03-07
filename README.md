@@ -86,7 +86,6 @@ Give a ⭐️ if you like this project!
 
 - [create-react-app](https://github.com/facebook/create-react-app)
 - [Heroku buildpack for create-react-app](https://github.com/mars/create-react-app-buildpack)
-- [big.js](https://github.com/MikeMcl/big.js/)
 
 ## 📝 Copyright & License
 
